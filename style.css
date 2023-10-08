@@ -1,0 +1,104 @@
+body {
+	display: flex;
+	width: 100%;
+	padding-top: 150px;
+	font-family: "arial";
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	max-width: 90%;
+	gap: 20px;
+}
+
+.content {
+	padding: 25px;
+	height: 260px;
+	flex-grow: 1;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	box-shadow: 0px 18px 36px -18px rgba(0, 0, 0, 1.0);
+	background-color: white;
+	padding: 4px;
+	width: 100%;
+	cursor: pointer;
+	flex-basis: 330px;
+	min-height: 500px;
+	transition: all 0.3s ease-in-out;
+}
+
+.content > h1 {
+	line-height: 1.4;
+	font-size: 32px;
+	margin-bottom: 16px;
+}
+
+.content > p {
+	line-height: 1.5;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.content a {
+	font-weight: 800;
+	color: #635bff;
+	text-decoration: none;
+}
+
+.content a:hover {
+	color: #0a2540;
+}
+
+.card-background {
+	height: 200px;
+	transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-background {
+	height: 160px;
+}
+
+.card-background img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.action-bottom-bar {
+	display: flex;
+	height: 42px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.action-bottom-bar a {
+	display: flex;
+	gap: 6px;
+	color: #635bff;
+	text-decoration: none;
+	font-weight: 800;
+	opacity: 0;
+	padding: 0 24px;
+	transition: all 0.3s ease-in-out;	
+}
+
+.card:hover .action-bottom-bar a{
+	opacity: 1;
+}
+
+.action-bottom-bar a:hover {
+	color: #0a2540;
+}
